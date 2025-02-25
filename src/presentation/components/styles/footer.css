@@ -1,0 +1,143 @@
+/* ======== Estilos Generales ======== */
+.footer {
+
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======== Logo ======== */
+.footer__logo-img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  
+}
+.footer__logo {
+  width: 130px;
+
+}
+
+.line {
+  position: relative;
+  margin-right: 20px;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px; /* Grosor del borde */
+  height: 100%; /* Alto del borde */
+  background: linear-gradient(180deg, 
+    rgba(52, 48, 69, 0) 0%, 
+    #C0B7E8 34.9%, 
+    #8176AF 68.75%, 
+    rgba(52, 48, 69, 0) 100%);
+    
+}
+
+
+/* ======== Menú ======== */
+.footer__list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.footer__item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.footer__item:hover {
+  color: #C0B7E8;
+}
+
+/* ======== Redes Sociales ======== */
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__social-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.footer__icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #C0B7E8;
+}
+
+.footer__icon:hover {
+  color: #C0B7E8;
+}
+
+/* ======== Botón ======== */
+.footer__button {
+  background: linear-gradient(to bottom, #C0B7E8, #8176AF);
+  color: #1B1426;
+  width: 180px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 17px;
+}
+
+.footer__button:hover {
+  opacity: 0.8;
+}
+
+/* ======== Copyright ======== */
+.footer__bottom {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ======== Responsive: Móvil (Menos de 600px) ======== */
+@media (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__menu{
+    display: none;
+    
+  }
+  .footer__links{
+display: none;
+  }
+
+  .line::after {
+    display: none;
+  }
+}

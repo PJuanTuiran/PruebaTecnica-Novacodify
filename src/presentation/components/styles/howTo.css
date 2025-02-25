@@ -1,0 +1,73 @@
+.howTo-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.howTo-container > p{
+    font-size: .7rem;
+    max-width: 500px;
+    color: var(--text-color);
+}
+
+.howTo-container__subtitle{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 100;
+    
+}
+
+.howTo-container__subtitle img{
+    width: 190px;
+    height: 50px;
+    
+}
+
+.howTo__next{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.howTo{
+    padding: 0  0 40px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.howTo__items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.howTo__items > div{
+    text-align: center;
+    display: flex;
+    
+    
+    justify-content: center;
+}
+
+.howTo__items .first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.919);
+    font-size: 2.5rem;
+    color: #343045;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+
+}

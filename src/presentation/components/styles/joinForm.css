@@ -1,0 +1,106 @@
+
+.join-hydra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  border-radius: var(--border-md);
+
+  
+}
+
+.join-hydra__container {
+  
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+}
+
+.join-hydra__title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.join-hydra__subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.join-hydra__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.join-hydra__group {
+  display: flex;
+  gap: 15px;
+}
+
+.join-hydra__input,
+.join-hydra__textarea {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.join-hydra__input::placeholder,
+.join-hydra__textarea::placeholder {
+  color: #bbb;
+}
+
+.join-hydra__input--full {
+  width: 100%;
+}
+
+.join-hydra__textarea {
+  width: 100%;
+  min-height: 200px;
+  resize: none;
+  border-radius: 25px;
+}
+.join-hydra__underline {
+  width: 16rem; /* Más grande que el título */
+  height: 2px; /* Grosor de la línea */
+  margin: 8px auto; /* Espaciado y centrado */
+  border: none; /* Eliminamos el borde normal */
+  background: linear-gradient(270deg, 
+    rgba(52, 48, 69, 0) 0%, 
+    #C0B7E8 34.9%, 
+    #8176AF 68.75%, 
+    rgba(52, 48, 69, 0) 100%);
+}
+
+/* Botón */
+.join-hydra__button {
+  background: linear-gradient(to bottom, #C0B7E8, #8176AF);
+  color: #1B1426;
+  
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 200px;
+  margin: auto;
+}
+
+.join-hydra__button:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE: Menos de 390px (1 columna) */
+@media (max-width: 390px) {
+  .join-hydra__group {
+    flex-direction: column;
+  }
+}
