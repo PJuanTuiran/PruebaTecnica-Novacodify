@@ -7,7 +7,20 @@
     justify-content: center;
 
 }
-
+.technologies-section__title{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    /* background-color: red; */
+}
+.technologies-section__title p{
+    font-size: 2rem;
+    margin-top: 10px;
+}
 .swiper-wrapper{
     display: flex ;
     flex-direction: row;
@@ -39,13 +52,13 @@
 }
 
 .technologies-section__img{
-   
-  /* Ajusta el tamaño según necesites */
-  height: 250px; /* Mantén igual que el width para que sea un círculo */
-  border-radius: 130px; /* Hace que el contenedor sea redondo */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+   max-width: 100%;
+  height: 250px; 
+  border-radius: 130px;
+  overflow: hidden; 
+  position: relative;
   
-  background-color: #ff0000; 
+  
 
 }
 
@@ -54,4 +67,16 @@
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+@media (max-width: 500px) {
+    
+    .technologies-section__img{
+        max-width: 100%;
+        height: 130px; 
+        border-radius: 30px;
+        overflow: hidden; 
+  
+  
+
+}
 }

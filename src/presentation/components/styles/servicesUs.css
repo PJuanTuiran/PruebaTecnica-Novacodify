@@ -149,4 +149,19 @@
     .swiper-button-next {
         right: -40px !important;
     }
+
+    .services_titles--arrow img{
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    
+    
+    .services_titles > p{
+       display: none;
+    
+    }
+    .services_titles--arrow img{
+        display: none;
+    }
 }

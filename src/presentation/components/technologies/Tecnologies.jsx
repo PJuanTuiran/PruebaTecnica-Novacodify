@@ -37,6 +37,14 @@ function Tecnologies() {
         <section className="technologies-section">
             <div className="technologies-section__img">
                 <img src={tech} alt="" />
+                <div className="technologies-section__title">
+                    <h2>
+                        TECHNOLOGIES & HARDWARE
+                    </h2>
+                    <p>
+                        USED BY HYDRA VR.
+                    </p>
+                </div>
             </div>
             
             <Swiper
