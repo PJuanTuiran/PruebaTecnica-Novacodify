@@ -80,6 +80,9 @@
   .howTo-container > p{
     display: none;
 }
+.howTo{
+    min-height: 40vh;
+}
 
 .howTo-container__subtitle img{
     display: none;

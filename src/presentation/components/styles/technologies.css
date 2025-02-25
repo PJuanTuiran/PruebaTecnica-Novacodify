@@ -68,9 +68,9 @@
     object-fit: cover;
     object-position: bottom;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .technologies-section{
-        min-height: 70vh;
+        min-height: 40vh;
     }
     
     .technologies-section__img{
