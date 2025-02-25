@@ -3,12 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-
+ 
 }
 .nav__logo{
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    width: 30%;
 }
 .nav__logo img{
     width: 80px;
@@ -42,7 +43,7 @@
     text-decoration: none;
     color: white;
     display: block;
-    
+    font-size: 0.9rem;
     position: relative;
     transition: left 0.3s;
     overflow: hidden;
@@ -138,4 +139,13 @@
 .nav__button--join:hover{
     transform: scale(1.1);
     
+}
+.nav_list_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.nav__menu svg {
+    font-size: 30px; 
 }

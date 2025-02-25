@@ -3,6 +3,7 @@ import Footer from "../components/Footer/Footer"
 import Header from "../components/header/Header"
 import HowTo from "../components/howTo/HowTo"
 import JoinForm from "../components/joinForm/JoinForm"
+import Section from "../components/sectionSmooth/Section"
 import ServicesUs from "../components/services/ServicesUs"
 import Tecnologies from "../components/technologies/Tecnologies"
 
@@ -10,15 +11,30 @@ import Tecnologies from "../components/technologies/Tecnologies"
 function Home() {
   return (
       <>
-          <Header/>
+          
+          <Section>
+              <Header />
+            </Section>
           <main className="main">
-              <About/>
-              <ServicesUs/>
-              <Tecnologies />
-              <HowTo/>
-              <JoinForm/>
+            <Section id="about" >
+                  <About />
+              </Section>
+              <Section id="services">
+                  <ServicesUs/>
+              </Section>
+                <Section id="technologies">
+                  <Tecnologies />
+              </Section>
+              <Section id="howTo">
+                  <HowTo/>
+                </Section>
+              <Section id="join">
+                  <JoinForm />
+                </Section>
           </main>
-          <Footer/>
+          <Section>
+              <Footer/>
+          </Section>
           
           
       

@@ -69,6 +69,9 @@
     object-position: bottom;
 }
 @media (max-width: 500px) {
+    .technologies-section{
+        min-height: 70vh;
+    }
     
     .technologies-section__img{
         max-width: 100%;

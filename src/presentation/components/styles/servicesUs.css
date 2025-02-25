@@ -156,7 +156,12 @@
 }
 @media (max-width: 650px) {
     
+    .services__section--us{
+        min-height: 60vh;
+
+    }
     
+
     .services_titles > p{
        display: none;
     

@@ -14,20 +14,23 @@ function ServicesUs() {
     
     useEffect(() => {
         const fetchServices = async () => {
+            
             try {
                 const response = await axios.get("http://localhost:5000/services")
                 if (response.status !== 200) {
                     throw new Error("Fetch services failed")
                 };
                 
-            const data = response.data
-            console.log(response)
-            setServices(data)
+                const data = response.data
+                console.log(response)
+                setServices(data)
                 
             } catch (error) {
                 console.error(error)
 
                 
+            } finally {
+                setLoading(false)
             }
         }
         fetchServices()
@@ -61,7 +64,10 @@ function ServicesUs() {
         
       {services.map((card) => (
         <SwiperSlide key={card.id}>
-          <div className="service">
+          {loading ? (
+            <p>Loading...</p>
+          ) : (
+            <div className="service">
                   <div className="service__section">
                           <header className="service__header">
                             <img src={card.img} alt="" />
@@ -74,6 +80,7 @@ function ServicesUs() {
                     </div>
                 
           </div>
+          )}
         </SwiperSlide>
       ))}
     </Swiper>

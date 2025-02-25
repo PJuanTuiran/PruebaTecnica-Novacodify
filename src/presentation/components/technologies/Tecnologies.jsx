@@ -52,10 +52,10 @@ function Tecnologies() {
                 spaceBetween={5}
                 navigation
                 breakpoints={{
-                    390: { slidesPerView: 1 }, // Una sola carta en pantallas pequeñas
-                    768: { slidesPerView: 2 }, // Dos cartas en tablets
-                    1024: { slidesPerView: 4 }, // Tres cartas en pantallas grandes
-                    // Cuatro cartas en pantallas de 1440px o más
+                    390: { slidesPerView: 1 }, 
+                    768: { slidesPerView: 2 }, 
+                    1024: { slidesPerView: 4 }, 
+                    
             }}
         >
                 <div className="tenchnologies-section__container" >

@@ -1,6 +1,8 @@
 .howTo-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 .howTo-container > p{
@@ -11,6 +13,7 @@
 
 .howTo-container__subtitle{
     display: flex;
+    gap: 1.5rem;
     align-items: center;
     font-size: 2rem;
     font-weight: 100;
@@ -36,6 +39,8 @@
     padding: 0  0 40px;
     min-height: 60vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 3rem;
 }

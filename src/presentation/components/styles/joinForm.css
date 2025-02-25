@@ -3,9 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
   border-radius: var(--border-md);
+  padding: 30px 0;
 
   
 }
@@ -29,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-/* Formulario */
+
 .join-hydra__form {
   display: flex;
   flex-direction: column;
@@ -70,10 +71,10 @@
   border-radius: 25px;
 }
 .join-hydra__underline {
-  max-width: 16rem; /* Más grande que el título */
-  height: 2px; /* Grosor de la línea */
-  margin: 8px auto; /* Espaciado y centrado */
-  border: none; /* Eliminamos el borde normal */
+  max-width: 16rem;
+  height: 2px; 
+  margin: 8px auto; 
+  border: none; 
   background: linear-gradient(270deg, 
     rgba(52, 48, 69, 0) 0%, 
     #C0B7E8 34.9%, 
@@ -81,7 +82,7 @@
     rgba(52, 48, 69, 0) 100%);
 }
 
-/* Botón */
+
 .join-hydra__button {
   background: linear-gradient(to bottom, #C0B7E8, #8176AF);
   color: #1B1426;
@@ -99,7 +100,7 @@
   opacity: 0.8;
 }
 
-/* RESPONSIVE: Menos de 390px (1 columna) */
+
 @media (max-width: 390px) {
   .join-hydra__group {
     flex-direction: column;

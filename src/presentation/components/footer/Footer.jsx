@@ -3,6 +3,7 @@ import frameLogo from '../../../assets/Frame.png';
 function Footer() {
     return (
     <footer className="footer">
+        
       <div className="footer__container">
         {/* Logo */}
         <div className="footer__logo line">
